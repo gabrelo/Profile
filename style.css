@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+h2,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 999;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  max-width: 1151px;
+  height: 754px;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+
+.link {
+  display: flex;
+  margin: 0.5rem 0rem;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #00dbde;
+  border-radius: 20px;
+}
+
+.link:hover {
+  border: 1px solid #fc00ff;
+}
+
+.games {
+  flex: 2;
+}
+
+.pro {
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  width: 80%;
+  position: relative;
+}
+
+.pro h2 {
+  width: 40%;
+  color: white;
+  font-weight: 600;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 48px 48px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*  SECTION*/
+.status {
+  margin-bottom: 0rem;
+}
+
+.cards p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  align-items: flex-start;
+}
+
+.search {
+  top: 100px;
+}
+
+.games {
+  margin: 2rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.9)
+  );
+  border-radius: 1rem;
+  margin: 0.8rem 0rem;
+  padding: 0.8rem;
+
+  justify-content: space-between;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  text-align: center;
+}
+
+.percentage {
+  font-weight: bold;
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 200px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.glass {
+  max-width: 1200px;
+}
+
+/*MENU*/
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ff00c3;
+ 
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list{
+  list-style: none;
+  align-items: center;
+  margin-right: 25px;
+  justify-content: center;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+
+
+.pro2{
+  display: none;
+}
+
+/*media queryes*/
+@media (max-width: 1400px) {
+
+  .titulo {
+    margin-top: 50px;
+    z-index: 20;
+  }
+
+  .cards{
+    width: 500px;
+  }
+
+  .glass {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1128px) {
+ 
+  .glass {
+    width: 700px;
+  }
+
+  .cards{
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+ 
+  .glass {
+    display: block;
+    width: 450px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 1370px;
+  }
+
+  .pro{
+    display: none;
+  }
+
+  .card{
+    width: 385px;
+    height: 180px;
+  }
+
+ .btn{
+   text-align: center;
+ }
+
+ .status{
+  text-align: center;
+ } 
+
+  .pro2{
+    display: block;
+    margin: 0;
+    margin-left: 90px;
+    width: 210px;
+    margin-top: 25px;
+  }
+
+.nav{
+  margin-bottom: 20px;
+}
+ 
+  main{
+    background-size: cover;
+  }
+}
+
+
+

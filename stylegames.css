@@ -1,0 +1,556 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+h2,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 999;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  max-width: 1151px;
+  height: 754px;
+}
+
+/*MENU*/
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ff00c3;
+ 
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list{
+  list-style: none;
+  align-items: center;
+  margin-right: 25px;
+  justify-content: center;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+/* fim do menu*/
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+
+.link {
+  display: flex;
+  margin: 0.5rem 0rem;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #00dbde;
+  border-radius: 20px;
+}
+
+.link:hover {
+  border: 1px solid #fc00ff;
+}
+
+.games {
+  flex: 2;
+}
+
+.pro {
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  width: 80%;
+  position: relative;
+}
+
+.pro h2 {
+  width: 40%;
+  color: white;
+  font-weight: 600;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 48px 48px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* GAMES SECTION*/
+
+.status {
+  margin-bottom: 0rem;
+}
+
+.cards p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  align-items: flex-start;
+}
+
+.search {
+  top: 100px;
+}
+
+.games {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cards {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.9)
+  );
+  border-radius: 1rem;
+  margin: 0.8rem 0rem;
+  padding: 0.8rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.3);
+  justify-content: space-between;
+}
+
+.progress1 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 97%;
+}
+
+.progress2 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 88%;
+}
+
+.progress3 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 37%;
+}
+
+.progress4 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress4::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 92%;
+}
+
+.progress5 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress5::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 31%;
+}
+.progress6 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress6::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 72%;
+}
+
+.progress7 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress7::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 45%;
+}
+
+.progress8 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress8::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 70%;
+}
+
+.progress9 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress9::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 86%;
+}
+
+.progress10 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress10::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 66%;
+}
+
+.progress11 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress11::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 0%;
+}
+
+.progress12 {
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  width: 250px;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress12::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 51%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+}
+
+.percentage {
+  font-weight: bold;
+  background: linear-gradient(to right top, #fc00ff, #00dbde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00dbde;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fc00ff;
+}
+
+.pro2{
+  display: none;
+}
+
+/*media queryes*/
+@media (max-width: 1400px) {
+
+  .titulo {
+    margin-top: 50px;
+    z-index: 20;
+  }
+
+  .cards{
+    width: 500px;
+  }
+
+  .glass {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1128px) {
+ 
+  .glass {
+    width: 700px;
+  }
+
+  .cards{
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+ 
+  .glass {
+    display: block;
+    width: 450px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 2340px;
+  }
+
+  .pro{
+    display: none;
+  }
+
+  .card{
+    width: 385px;
+    height: 130px;
+  }
+
+ .btn{
+   text-align: center;
+ }
+
+  .status{
+   text-align: center;
+  } 
+
+  .pro2{
+    display: block;
+    margin: 0;
+    margin-left: 90px;
+    width: 210px;
+    margin-top: 25px;
+  }
+
+.nav{
+  margin-bottom: 20px;
+}
+ 
+  main{
+    background-size: cover;
+  }
+
+  .progress1,
+  .progress2,
+  .progress3,
+  .progress4,
+  .progress5,
+  .progress6,
+  .progress7,
+  .progress8,
+  .progress9,
+  .progress10,
+  .progress11,
+  .progress12
+  {
+    width: 150px;
+    height: 20px;
+  }
+}
